@@ -1,1 +1,18 @@
-<p>movies works!</p>
+<div class="assecor-header">Filme</div>
+
+<div class="row">
+  <div *ngFor="let movie of movies" class="col-4 item-wrapper">
+    <div class="item">
+      <div style="padding: 16px;">
+        <div>
+          <h2>{{ movie.properties.title }}</h2>
+        </div>
+        <div>{{ movie.properties.director }}</div>
+        <div>{{ movie.properties.producer }}</div>
+        <div class="mb-2">{{ movie.properties.release_date | date }}</div>
+        <div style="font-style: italic;">{{ movie.properties.opening_crawl }}</div>
+        <button mat-button class="pl-0 mt-3" style="font-weight: 500;">Mehr Informationen</button>
+      </div>
+    </div>
+  </div>
+</div>
