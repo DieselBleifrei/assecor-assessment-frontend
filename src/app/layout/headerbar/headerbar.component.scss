@@ -1,0 +1,32 @@
+.assecor-headerbar {
+  height: 100px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  background-color: white;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.header-bar-buttons {
+  display: inline;
+}
+
+.search-input {
+  display: inline;
+}
+
+.search-input i {
+  position: relative;
+  right: 30px;
+  font-size: 22px;
+  top: 5px;
+}
+
+.search-input input {
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
