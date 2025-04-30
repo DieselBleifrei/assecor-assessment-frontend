@@ -2,3 +2,23 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.assecor-header {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  margin: 20px;
+}
+
+.item-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.item {
+  background-color: #E2E2E2;
+  width: 350px;
+}
