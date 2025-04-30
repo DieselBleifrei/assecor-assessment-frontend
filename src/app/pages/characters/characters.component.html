@@ -1,1 +1,17 @@
-<p>characters works!</p>
+<div class="assecor-header">Personen</div>
+
+<div class="row">
+  <div *ngFor="let character of characters" class="col-4 item-wrapper">
+    <div class="item">
+      <div style="padding: 16px;">
+        <div>
+          <h2>{{ character.properties.name }}</h2>
+        </div>
+        <div>{{ 'Geburtsdatum: ' + character.properties.birth_year }}</div>
+        <div>{{ 'Größe: ' + character.properties.height + 'cm' }}</div>
+        <div>{{ 'Gewicht: ' + character.properties.mass + 'kg' }}</div>
+        <button mat-button class="pl-0 mt-3" style="font-weight: 500;">Mehr Informationen</button>
+      </div>
+    </div>
+  </div>
+</div>
