@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RequestService } from './services/request.service';
-import { StarWarsUniverseAPIs } from './models/swapiStarWarsUniverseAPIs';
 import { SwapiData } from './models/swapiData';
+import { DataSharingService } from './services/data-sharing.service';
 
 @Component({
   selector: 'app-root',
@@ -11,15 +11,15 @@ import { SwapiData } from './models/swapiData';
 export class AppComponent {
   title = 'assecor-assessment-frontend';
 
-  private starWarsApis: StarWarsUniverseAPIs;
-
-  constructor(private requestService: RequestService) {
+  constructor(private requestService: RequestService,
+    private dataSharingService: DataSharingService
+  ) {
 
   }
 
   ngOnInit() {
     this.requestService.getSwapi().subscribe((data: SwapiData) => {
-      this.starWarsApis = data.result;
+      this.dataSharingService.setStarWarsAPIs(data.result);
     })
   }
 }
