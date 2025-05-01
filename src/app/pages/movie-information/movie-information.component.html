@@ -1,8 +1,12 @@
 <div style="text-align: center;">
-  <div style="font-size: 16px;"> Characterdetails</div>
+  <div style="font-size: 16px;"> Filmdetails</div>
   <div class="header-divider"></div>
-  <div class="assecor-header">Personen</div>
+  <div class="assecor-header">{{ movie.properties.title }}</div>
 </div>
-<div class="row">
-
+<div class="col-12 col-md-6" style="margin-top: 100px;">
+  <div style="font-size: 20px; font-weight: 500; margin-bottom: 8px">Details:</div>
+  <div><b>Director: </b>{{ movie.properties.director }}</div>
+  <div><b>Produzenten: </b>{{ movie.properties.producer }}</div>
+  <div class="mb-2"><b>Erscheinungsdatum: </b>{{ movie.properties.release_date | date }}</div>
+  <div style="font-style: italic;">{{ movie.properties.opening_crawl }}</div>
 </div>
