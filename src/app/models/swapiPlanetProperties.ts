@@ -5,7 +5,7 @@ export class SwapiPlanetProperties {
   edited: string;
   gravity: number;
   name: string;
-  orbital_preiod: number;
+  orbital_period: number;
   population: number;
   rotation_period: number;
   surface_water: number;
