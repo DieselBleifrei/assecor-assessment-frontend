@@ -9,7 +9,7 @@
         </div>
         <div>{{ 'Terrain: ' + planet.properties.terrain }}</div>
         <div>{{ 'Population: ' + planet.properties.population }}</div>
-        <button mat-button class="pl-0 mt-3" style="font-weight: 500;">Mehr Informationen</button>
+        <button mat-button class="pl-0 mt-3" style="font-weight: 500;" [routerLink]="'/planets/' + planet.uid">Mehr Informationen</button>
       </div>
     </div>
   </div>

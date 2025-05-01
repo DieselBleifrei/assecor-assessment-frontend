@@ -10,7 +10,7 @@
         <div>{{ 'Geburtsdatum: ' + character.properties.birth_year }}</div>
         <div>{{ 'Größe: ' + character.properties.height + 'cm' }}</div>
         <div>{{ 'Gewicht: ' + character.properties.mass + 'kg' }}</div>
-        <button mat-button class="pl-0 mt-3" style="font-weight: 500;">Mehr Informationen</button>
+        <button mat-button class="pl-0 mt-3" style="font-weight: 500;" [routerLink]="'/characters/' + character.uid">Mehr Informationen</button>
       </div>
     </div>
   </div>
