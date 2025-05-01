@@ -21,15 +21,15 @@ export class MovieInformationComponent {
   }
 
 
-    ngOnInit() {
-      let combined = combineLatest(this.route.params, this.dataSharingService.getStarWarsAPIs())
-      combined.subscribe(([params, swapiData]) => {
-        if (params && params['id'] && swapiData) {
-          this.http.get<SwapiMovieResult>(swapiData.films + '/' + params['id'] + '?expanded=true').subscribe((movie: SwapiMovieResult) => {
-            this.movie = movie.result;
-          })
-        }
-      })
-    }
-
+  ngOnInit() {
+    let combined = combineLatest(this.route.params, this.dataSharingService.getStarWarsAPIs())
+    combined.subscribe(([params, swapiData]) => {
+      if (params && params['id'] && swapiData) {
+        this.http.get<SwapiMovieResult>(swapiData.films + '/' + params['id'] + '?expanded=true').subscribe((movie: SwapiMovieResult) => {
+          this.movie = movie.result;
+        })
+      }
+    })
   }
+
+}

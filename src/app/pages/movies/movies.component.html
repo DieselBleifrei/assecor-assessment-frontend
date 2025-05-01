@@ -7,9 +7,9 @@
         <div>
           <h2>{{ movie.properties.title }}</h2>
         </div>
-        <div>{{ movie.properties.director }}</div>
-        <div>{{ movie.properties.producer }}</div>
-        <div class="mb-2">{{ movie.properties.release_date | date }}</div>
+        <div>{{ 'Direktor: '+ movie.properties.director }}</div>
+        <div>{{ 'Produzenten: '+ movie.properties.producer }}</div>
+        <div class="mb-2">{{ 'Erscheinungsdatum: ' + (movie.properties.release_date | date) }}</div>
         <div style="font-style: italic;">{{ movie.properties.opening_crawl }}</div>
         <button mat-button class="pl-0 mt-3" style="font-weight: 500;" [routerLink]="'/movies/' + movie.uid">Mehr Informationen</button>
       </div>
