@@ -11,6 +11,19 @@
   z-index: 100;
 }
 
+.assecor-headerbar-mobile {
+  height: 100px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 50px;
+  z-index: 100;
+}
+
 .header-bar-buttons {
   display: inline;
 }
@@ -30,4 +43,30 @@
   border-radius: 2px;
   border: 1px solid #ccc;
   padding: 5px;
+}
+
+@media screen and (max-width: 900px) {
+  .assecor-headerbar {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 901px) {
+  .assecor-headerbar-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .search-input {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 701px) {
+  .search-input-mobile {
+    display: none;
+  }
 }
