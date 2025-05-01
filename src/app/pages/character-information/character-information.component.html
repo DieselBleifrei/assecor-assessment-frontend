@@ -1,1 +1,17 @@
-<p>character-information works!</p>
+<div style="text-align: center;">
+  <div style="font-size: 16px;">characterendetails</div>
+  <div class="header-divider"></div>
+  <div class="assecor-header">{{ character.properties.name }}</div>
+</div>
+<div class="col-12 col-md-6" style="margin-top: 100px;">
+  <div style="font-size: 20px; font-weight: 500; margin-bottom: 8px">Details:</div>
+  <div><b>Geburtsdatum: </b>{{ character.properties.birth_year }}</div>
+  <div><b>Augenfarbe: </b>{{ character.properties.eye_color }}</div>
+  <div><b>Geschlecht: </b>{{ character.properties.gender }}</div>
+  <div><b>Haarfarbe: </b>{{ character.properties.hair_color }}</div>
+  <div><b>Größe: </b>{{ character.properties.height }}</div>
+  <div><b>Masse: </b>{{ character.properties.mass }}</div>
+  <div><b>Hautfarbe: </b>{{ character.properties.skin_color }}</div>
+
+  <div style="font-style: italic;">{{ character.description }}</div>
+</div>
