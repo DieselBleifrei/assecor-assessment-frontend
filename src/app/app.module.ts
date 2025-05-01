@@ -20,6 +20,10 @@ import { CreateMovieDialogComponent } from './dialogs/create-movie-dialog/create
 import { CharacterInformationComponent } from './pages/character-information/character-information.component';
 import { MovieInformationComponent } from './pages/movie-information/movie-information.component';
 import { PlanetInformationComponent } from './pages/planet-information/planet-information.component'
+import { MatMenuModule } from '@angular/material/menu';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -45,6 +49,10 @@ import { PlanetInformationComponent } from './pages/planet-information/planet-in
     BrowserAnimationsModule,
     MatIconModule,
     MatDividerModule,
+    MatMenuModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
