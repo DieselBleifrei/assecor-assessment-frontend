@@ -1,1 +1,17 @@
-<p>planet-information works!</p>
+<div style="text-align: center;">
+  <div style="font-size: 16px;">Planetendetails</div>
+  <div class="header-divider"></div>
+  <div class="assecor-header">{{ planet.properties.name }}</div>
+</div>
+<div class="col-12 col-md-6" style="margin-top: 100px;">
+  <div style="font-size: 20px; font-weight: 500; margin-bottom: 8px">Details:</div>
+  <div><b>Terrain: </b>{{ planet.properties.terrain }}</div>
+  <div><b>Klima: </b>{{ planet.properties.climate }}</div>
+  <div><b>Einwohnerzahl: </b>{{ planet.properties.population }}</div>
+  <div><b>Durchmesser: </b>{{ planet.properties.diameter }}</div>
+  <div><b>Schwerkraft: </b>{{ planet.properties.gravity }}</div>
+  <div><b>Umlaufsperiode: </b>{{ planet.properties.orbital_period }}</div>
+  <div><b>Rotationsdauer: </b>{{ planet.properties.rotation_period }}</div>
+  <div><b>Oberflächenwasser: </b>{{ planet.properties.surface_water }}</div>
+  <div style="font-style: italic;">{{ planet.description }}</div>
+</div>
