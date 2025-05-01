@@ -5,6 +5,7 @@
     <button mat-button routerLink="/movies" class="pl-3 pr-3">Filme</button>
     <button mat-button routerLink="/characters" class="pl-3 pr-3">Charaktere</button>
     <button mat-button routerLink="/planets" class="pl-3 pr-3">Planeten</button>
+    <button mat-flat-button color="primary" class="pl-3 pr-3" [matMenuTriggerFor]="creationMenu">Erstellen</button>
   </div>
   <div class="search-input">
     <input type="text">
@@ -26,9 +27,25 @@
     <button mat-icon-button routerLink="/planets">
       <span class="material-symbols-outlined">planet</span>
     </button>
+    <button mat-icon-button color="primary" class="pl-3 pr-3" [matMenuTriggerFor]="creationMenu">
+      <span class="material-symbols-outlined">add</span>
+    </button>
   </div>
   <div class="search-input">
     <input type="text">
     <i class="material-icons">search</i>
   </div>
+  <mat-menu #creationMenu="matMenu">
+    <ng-container>
+      <button mat-menu-item (click)="openMovieCreationDialog()">
+        Film hinzufügen
+      </button>
+      <button mat-menu-item (click)="openPlanetCreationDialog()">
+        Planet hinzufügen
+      </button>
+      <button mat-menu-item (click)="openCharacterCreationDialog()">
+        Charakter hinzufügen
+      </button>
+    </ng-container>
+  </mat-menu>
 </div>
