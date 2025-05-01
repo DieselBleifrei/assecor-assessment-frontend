@@ -1,1 +1,37 @@
-<p>create-character-dialog works!</p>
+<h2 mat-dialog-title>Charakter hinzufügen</h2>
+
+<mat-dialog-content class="row">
+  <mat-form-field class="col-12">
+    <mat-label>Name</mat-label>
+    <input matInput/>
+  </mat-form-field>
+  <mat-form-field class="col-6">
+    <mat-label>Größe</mat-label>
+    <input matInput/>
+  </mat-form-field>
+  <mat-form-field class="col-6">
+    <mat-label>Gewicht</mat-label>
+    <input matInput/>
+  </mat-form-field>
+  <mat-form-field class="col-6">
+    <mat-label>Haarfarbe</mat-label>
+    <input matInput/>
+  </mat-form-field>
+  <mat-form-field class="col-6">
+    <mat-label>Augenfarbe</mat-label>
+    <input matInput/>
+  </mat-form-field>
+  <mat-form-field class="col-6">
+    <mat-label>Geburtsjahr</mat-label>
+    <input matInput/>
+  </mat-form-field>
+  <mat-form-field class="col-6">
+    <mat-label>Geschlecht</mat-label>
+    <input matInput/>
+  </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-actions style="justify-content: end;">
+  <button class="mr-3" mat-button [mat-dialog-close]>Schließen</button>
+  <button color="primary" mat-flat-button [mat-dialog-close]>Speichern</button>
+</mat-dialog-actions>

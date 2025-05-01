@@ -1,1 +1,29 @@
-<p>create-planet-dialog works!</p>
+<h2 mat-dialog-title>Planeten hinzufügen</h2>
+
+<mat-dialog-content class="row">
+  <mat-form-field class="col-12">
+    <mat-label>Name</mat-label>
+    <input matInput placeholder="Name"/>
+  </mat-form-field>
+  <mat-form-field class="col-12">
+    <mat-label>Type</mat-label>
+    <input matInput/>
+  </mat-form-field>
+  <mat-form-field class="col-12">
+    <mat-label>Erstellt von</mat-label>
+    <input matInput/>
+  </mat-form-field>
+  <mat-form-field class="col-6">
+    <mat-label>Genre</mat-label>
+    <input matInput/>
+  </mat-form-field>
+  <mat-form-field class="col-12">
+    <mat-label>Races</mat-label>
+    <textarea matInput placeholder="Namen mit Semicolon trennen"></textarea>
+  </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-actions style="justify-content: end;">
+  <button class="mr-3" mat-button [mat-dialog-close]>Schließen</button>
+  <button color="primary" mat-flat-button [mat-dialog-close]>Speichern</button>
+</mat-dialog-actions>
