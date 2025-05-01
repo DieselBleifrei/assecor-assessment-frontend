@@ -13,9 +13,13 @@ import { MoviesComponent } from './pages/movies/movies.component';
 import { CharactersComponent } from './pages/characters/characters.component';
 import { PlanetsComponent } from './pages/planets/planets.component';
 import { MatIconModule } from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
 import { CreatePlanetDialogComponent } from './dialogs/create-planet-dialog/create-planet-dialog.component';
 import { CreateCharacterDialogComponent } from './dialogs/create-character-dialog/create-character-dialog.component';
-import { CreateMovieDialogComponent } from './dialogs/create-movie-dialog/create-movie-dialog.component'
+import { CreateMovieDialogComponent } from './dialogs/create-movie-dialog/create-movie-dialog.component';
+import { CharacterInformationComponent } from './pages/character-information/character-information.component';
+import { MovieInformationComponent } from './pages/movie-information/movie-information.component';
+import { PlanetInformationComponent } from './pages/planet-information/planet-information.component'
 
 @NgModule({
   declarations: [
@@ -28,7 +32,10 @@ import { CreateMovieDialogComponent } from './dialogs/create-movie-dialog/create
     PlanetsComponent,
     CreatePlanetDialogComponent,
     CreateCharacterDialogComponent,
-    CreateMovieDialogComponent
+    CreateMovieDialogComponent,
+    CharacterInformationComponent,
+    MovieInformationComponent,
+    PlanetInformationComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +43,8 @@ import { CreateMovieDialogComponent } from './dialogs/create-movie-dialog/create
     HttpClientModule,
     MatButtonModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    MatDividerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
